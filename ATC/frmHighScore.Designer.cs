@@ -1,0 +1,111 @@
+﻿namespace ATC
+{
+    partial class frmHighScore
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+			this.components = new System.ComponentModel.Container ( );
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager ( typeof ( frmHighScore ) );
+			this.lblItog = new System.Windows.Forms.Label ( );
+			this.btnBack = new System.Windows.Forms.PictureBox ( );
+			this.tmrOpenWindow = new System.Windows.Forms.Timer ( this.components );
+			this.tmrCloseWindow = new System.Windows.Forms.Timer ( this.components );
+			( ( System.ComponentModel.ISupportInitialize ) ( this.btnBack ) ).BeginInit ( );
+			this.SuspendLayout ( );
+			// 
+			// lblItog
+			// 
+			this.lblItog.BackColor = System.Drawing.Color.Transparent;
+			this.lblItog.Font = new System.Drawing.Font ( "Consolas", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+			this.lblItog.ForeColor = System.Drawing.Color.White;
+			this.lblItog.Location = new System.Drawing.Point ( 12, 18 );
+			this.lblItog.Name = "lblItog";
+			this.lblItog.Size = new System.Drawing.Size ( 723, 160 );
+			this.lblItog.TabIndex = 9;
+			this.lblItog.Text = "Highscore: 46$";
+			this.lblItog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// btnBack
+			// 
+			this.btnBack.BackColor = System.Drawing.Color.Transparent;
+			this.btnBack.Font = new System.Drawing.Font ( "Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 204 ) ) );
+			this.btnBack.ForeColor = System.Drawing.Color.Black;
+			this.btnBack.Image = global::ATC.Properties.Resources.Back_stell;
+			this.btnBack.Location = new System.Drawing.Point ( 12, 257 );
+			this.btnBack.Name = "btnBack";
+			this.btnBack.Size = new System.Drawing.Size ( 100, 50 );
+			this.btnBack.TabIndex = 20;
+			this.btnBack.TabStop = false;
+			this.btnBack.Tag = "Back";
+			this.btnBack.Click += new System.EventHandler ( this.btnBack_Click );
+			this.btnBack.MouseEnter += new System.EventHandler ( this.ButtonOver );
+			this.btnBack.MouseLeave += new System.EventHandler ( this.ButtonOut );
+			// 
+			// tmrOpenWindow
+			// 
+			this.tmrOpenWindow.Enabled = true;
+			this.tmrOpenWindow.Interval = 1;
+			this.tmrOpenWindow.Tick += new System.EventHandler ( this.tmrOpenWindow_Tick );
+			// 
+			// tmrCloseWindow
+			// 
+			this.tmrCloseWindow.Interval = 1;
+			this.tmrCloseWindow.Tick += new System.EventHandler ( this.tmrCloseWindow_Tick );
+			// 
+			// frmHighScore
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF ( 7F, 15F );
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.Black;
+			this.BackgroundImage = global::ATC.Properties.Resources.Back;
+			this.ClientSize = new System.Drawing.Size ( 747, 319 );
+			this.Controls.Add ( this.btnBack );
+			this.Controls.Add ( this.lblItog );
+			this.Font = new System.Drawing.Font ( "Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 204 ) ) );
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Icon = ( ( System.Drawing.Icon ) ( resources.GetObject ( "$this.Icon" ) ) );
+			this.MinimizeBox = false;
+			this.Name = "frmHighScore";
+			this.Opacity = 0D;
+			this.ShowInTaskbar = false;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.TransparencyKey = System.Drawing.Color.Black;
+			this.Load += new System.EventHandler ( this.frmHighScore_Load );
+			( ( System.ComponentModel.ISupportInitialize ) ( this.btnBack ) ).EndInit ( );
+			this.ResumeLayout ( false );
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lblItog;
+        private System.Windows.Forms.PictureBox btnBack;
+        private System.Windows.Forms.Timer tmrOpenWindow;
+        private System.Windows.Forms.Timer tmrCloseWindow;
+
+    }
+}
